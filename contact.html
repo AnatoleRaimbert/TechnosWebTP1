@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="TP1.css" />
-        <title>Acceuil</title>
+        <title>Contact</title>
     </head>
-
+    
     <body>
         <header> 
             <ul id="menu_horizontal">
@@ -17,16 +17,30 @@
             </ul>
 
         </header>
-            <h1>Anatole Raimbert</h1>
-            <img class="displayed" src="photo_CV.jpg" alt="Anatole" width=300 hight=500/>
-            <h4 id="acceuilH4">
-                anatole.raimbert@edu.ece.fr <br>
-                105 rue de lille, 75007 Paris <br><br>
-                <a href="http://www.linkedin.com/in/anatole-raimbert/">LinkedIn</a>
-            </h4>
-            <p>
-                Je suis à la recherche d’un stage de quatre mois dans le cadre de mes études d’avril à juillet 2019. J’ai 21 ans, je suis sportif, sociable et ouvert d’esprit. Le respect, la curiosité et la remise en question sont mes trois grands principes.
-            </p>
+
+        <form action="contact.html" method="post">
+            <br>
+            <div>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="user_name">
+            </div>
+            <br>
+            <div>
+                <label for="mail">Adresse mail :</label>
+                <input type="email" id="mail" name="user_mail">
+            </div>
+            <br>
+            <div>
+                <label for="msg">Message :</label>
+                <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <br>
+            <div class="button">
+            <button type="submit">Envoyer le message</button>
+            </div>
+            <br>
+        </form>
+        
         <footer>
             <ul id="menu_horizontal">
                 <li><a href="acceuil.html">Accueil</a></li>
@@ -36,5 +50,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </footer>
+        
     </body>
 </html>
